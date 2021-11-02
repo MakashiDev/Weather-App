@@ -1,0 +1,46 @@
+    @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    html {
+        background: url(https://source.unsplash.com/1920x1080/?forest) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    .center {
+        font-family: 'Spectral', serif;
+        color: white;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 3px black;
+        border-style: solid;
+        padding: 15px;
+        border-radius: 30px;
+        background: #000000ad;
+    }
+    
+    .center input {
+        outline: none;
+        border-radius: 8.5px;
+        border: none;
+        font-family: 'Spectral', serif;
+        background-color: #0000008c;
+        color: white;
+    }
+    
+    .center button {
+        background: #0000008c;
+        border: none;
+        outline: none;
+        border-radius: 330px;
+        col
+.grid {
+	display: grid;
+	place-items: center;
+
+}or: white;
+        padding: 3px;
+    }
