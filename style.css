@@ -82,4 +82,7 @@ html {
     .info h3 {
         font-size: 3.5vw;
     }
+    .center {
+	border-radius:42px;
+    }
 }
