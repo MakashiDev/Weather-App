@@ -73,3 +73,6 @@ function useStorage() {
         showCity(city);
     }
 }
+document
+    .getElementsByClassName("center")
+    .addEventListener("load", useStorage());
