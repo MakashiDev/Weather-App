@@ -66,7 +66,12 @@ function printWeather(weather) {
 
 function useStorage() {
     const city = localStorage.getItem("location");
-    showCity(city);
+    // check if city is null if null then use geolocation
+    if (city == null) {
+        getLocation();
+    } else {
+        showCity(city);
+    }
 }
 
 document
