@@ -5,7 +5,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .center {
@@ -49,8 +49,8 @@ html {
 
 .grid {
     display: grid;
-    align-items: center; 
-  	justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .search {
@@ -66,6 +66,7 @@ html {
 .info h2 {
     margin: 10px 0;
 }
+
 @media screen and (max-width: 1024px) {
     .center button {
         font-size: 2vw;
@@ -83,6 +84,6 @@ html {
         font-size: 3.5vw;
     }
     .center {
-	border-radius:42px;
+        border-radius: 42px;
     }
 }
