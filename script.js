@@ -19,12 +19,7 @@ function showPosition(position) {
     document.cookie = "lon=" + lon;
     const API = "942d172e2e4e59b8e961f7dda58888f5";
     fetch(
-            "https://api.openweathermap.org/data/2.5/weather?lat=" +
-            lat +
-            "&lon=" +
-            lon +
-            "&appid=" +
-            API
+            "https://makashi-server.herokuapp.com/weather/latlon/" + lat + "&" + lon
         )
         .then((response) => response.json())
         .then((data) => printWeather(data));
@@ -36,13 +31,7 @@ function getCity() {
 }
 
 function showCity(city) {
-    const API = "942d172e2e4e59b8e961f7dda58888f5";
-    fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q=" +
-            city +
-            "&appid=" +
-            API
-        )
+    fetch("https://makashi-server.herokuapp.com/weather/" + city)
         .then((response) => response.json())
         .then((data) => printWeather(data));
 }
