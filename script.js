@@ -38,18 +38,15 @@ function showCity(city) {
 function printWeather(weather) {
     temp = weather.main.temp;
     storeStorage(weather.name);
-    if (weather.sys.country == "US") {
-        temp = (temp - 273.15) * 1.8 + 32;
-        temp = Math.round(temp);
-        humidity = weather.main.humidity;
-        wind = weather.wind.speed;
-        document.getElementById("temp").innerHTML = temp + "°F";
-        document.getElementById("humidity").innerHTML =
-            "Humidity: " + humidity + "%";
-        document.getElementById("place").innerHTML = "Weather in " + weather.name;
-        document.getElementById("wind").innerHTML =
-            "Wind: " + Math.round(wind) + "mph";
-    }
+    temp = (temp - 273.15) * 1.8 + 32;
+    temp = Math.round(temp);
+    humidity = weather.main.humidity;
+    wind = weather.wind.speed;
+    document.getElementById("temp").innerHTML = temp + "°F";
+    document.getElementById("humidity").innerHTML = "Humidity: " + humidity + "%";
+    document.getElementById("place").innerHTML = "Weather in " + weather.name;
+    document.getElementById("wind").innerHTML =
+        "Wind: " + Math.round(wind) + "mph";
 }
 
 function useStorage() {
