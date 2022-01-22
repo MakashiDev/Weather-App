@@ -46,7 +46,7 @@ function printWeather(weather) {
     document.getElementById("humidity").innerHTML = "Humidity: " + humidity + "%";
     document.getElementById("place").innerHTML = "Weather in " + weather.name;
     document.getElementById("wind").innerHTML =
-        "Wind: " + Math.round(wind) + "mph";
+        "Wind: " + Math.round(wind * 3) + "mph";
 }
 
 function useStorage() {
