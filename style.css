@@ -109,4 +109,7 @@ html {
     .center {
         border-radius: 42px;
     }
+    .info #type {
+        font-size: 25px;
+    }
 }
