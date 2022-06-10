@@ -10,43 +10,54 @@ html {
 
 .center {
     font-family: 'Spectral', serif;
-    color: white;
+    /* color: white; */
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px black;
+    border: 5.5px #ffffff2b;
     border-style: solid;
     padding: 15px;
     border-radius: 30px;
-    background: #000000ad;
+    /* background: #000000ad; */
     transition: .5s ease-in-out;
+    backdrop-filter: blur(10px);
 }
 
 .center input {
     outline: none;
     border-radius: 8.5px;
-    border: none;
     font-family: 'Spectral', serif;
-    background-color: #0000008c;
-    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    /* color: white; */
     font-size: 1.5vw;
+    /* border-color: white; */
+    /* border-width: thick; */
+    /* border-style: solid; */
+    border: 2px #ffffff57 solid;
 }
 
 .center button {
-    background: #0000008c;
+    background: #ffffff3d;
     border: none;
     outline: none;
     color: #0E7AFE;
     border-radius: 50%;
     margin: 0 .5vw;
-    padding: 4px 5px;
+    padding: 5px 5px;
     font-size: 1vw;
+    backdrop-filter: blur(10px);
+    transition: .5s ease-in-out;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .center button:hover {
-    background: #000000ba;
+    background: #00000033;
 }
 
 .grid {
@@ -78,7 +89,7 @@ html {
     position: absolute;
     bottom: 3%;
     right: 3%;
-    background: #0000008c;
+    background: #ffffff14;
     background-size: 500px;
     border: none;
     outline: none;
