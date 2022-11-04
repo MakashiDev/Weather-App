@@ -16,12 +16,16 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px black;
-    border-style: solid;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    -moz-backdrop-filter: blur(15px);
+    -o-backdrop-filter: blur(15px);
+    -ms-backdrop-filter: blur(15px);
     padding: 15px;
     border-radius: 30px;
-    background: #000000ad;
     transition: .5s ease-in-out;
+    border: none;
+    box-shadow: -5px 10px 100px black;
 }
 
 .center input {
@@ -35,7 +39,7 @@ html {
 }
 
 .center button {
-    background: #0000008c;
+    background: #00000000;
     border: none;
     outline: none;
     color: #0E7AFE;
@@ -43,6 +47,7 @@ html {
     margin: 0 .5vw;
     padding: 4px 5px;
     font-size: 1vw;
+    box-shadow: -5px 10px 45px black;
 }
 
 .center button:hover {
@@ -78,7 +83,7 @@ html {
     position: absolute;
     bottom: 3%;
     right: 3%;
-    background: #0000008c;
+    background: inherit;
     background-size: 500px;
     border: none;
     outline: none;
@@ -111,5 +116,14 @@ html {
     }
     .info #type {
         font-size: 25px;
+    }
+}
+
+@media (prefers-color-scheme:dark) {
+    .center {
+        background: #000000ad;
+    }
+    .center button {
+        box-shadow: -5px 10px 30px black;
     }
 }
